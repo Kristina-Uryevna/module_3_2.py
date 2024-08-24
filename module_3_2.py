@@ -5,15 +5,15 @@ def send_email(message, recipient, *, sender="university.help@gmail.com"):
         print(f"Невозможно отправить письмо с адреса {sender} на адрес {recipient}")
         return
 
-    if sender == recipient:
-        print(f"Невозможно отправить письмо с адреса {sender} на адрес {recipient}")
-        return
+    if sender == recipient: 5
+    print(f"Невозможно отправить письмо с адреса {sender} на адрес {recipient}")
+    return
 
     if sender == 'university.help@gmail.com':
-        print('письмо успешно отправлено с адреса {sender} на адрес {recipient}')
+        print('Письмо успешно отправлено с адреса', sender, 'на адрес', recipient)
 
     if sender != 'university.help@gmail.com':
-        print('НЕСТАНДАРТНЫЙ ОТПРАВИТЕЛЬ! Письмо отправлено с адреса {sender} на адрес {recipient}')
+        print('НЕСТАНДАРТНЫЙ ОТПРАВИТЕЛЬ! Письмо отправлено с адреса', sender, 'на адрес', recipient)
 
 
 send_email('Это сообщение для проверки связи', 'vasyok1337@gmail.com')
