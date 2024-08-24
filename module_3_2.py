@@ -5,9 +5,9 @@ def send_email(message, recipient, *, sender="university.help@gmail.com"):
         print(f"Невозможно отправить письмо с адреса {sender} на адрес {recipient}")
         return
 
-    if sender == recipient: 5
-    print(f"Невозможно отправить письмо с адреса {sender} на адрес {recipient}")
-    return
+    if sender == recipient:
+        print(f"Нельзя отправить письмо самому себе", {sender}, 'на адрес', {recipient})
+        return
 
     if sender == 'university.help@gmail.com':
         print('Письмо успешно отправлено с адреса', sender, 'на адрес', recipient)
